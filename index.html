@@ -75,9 +75,28 @@
     💬
 </a>
 
+    <script>
+      window.chatwootSettings = {"position":"left","type":"expanded_bubble","launcherTitle":"Chatea con nosotros"};
+      (function(d,t) {
+        var BASE_URL="https://app.helpia.com.co";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'fG2KXBaRHv8rSANPNcU6qgLh',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+    
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
